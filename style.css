@@ -1,0 +1,92 @@
+
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    background-image: url(photo_2023-11-06_02-56-15.jpg);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: brightness(40%);
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(68, 15, 15, 0.1);
+    transition: transform 0.5s ease-in-out;
+    z-index: 2;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+
+.card.active {
+    transform: translateY(-100%);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background:linear-gradient(#BF7C2A,#8C3D0F);
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+.img {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+}
+.card-content {
+    padding: 20px;
+}
+
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-button {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(#BF7C2A,#8C3D0F);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #2980b9;
+}
+
